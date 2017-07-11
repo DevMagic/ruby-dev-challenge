@@ -1,3 +1,5 @@
+![Logo](images/devmagic-logo.png)
+
 # Desafio Técnico para Desenvolvedor Ruby
 
 Orientações gerais:
