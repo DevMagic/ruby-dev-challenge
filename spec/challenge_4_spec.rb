@@ -1,4 +1,4 @@
-require './lib/challenge_4'
+require './lib/ruby-dev-challenge/challenge_4'
 
 String.include Extensions::String::Palindrome
 

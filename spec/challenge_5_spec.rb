@@ -1,4 +1,4 @@
-require './lib/challenge_5'
+require './lib/ruby-dev-challenge/challenge_5'
 
 describe IntegerConverter do
   subject(:convert) { IntegerConverter.to_string(number) }
