@@ -20,10 +20,18 @@ describe DevMagic do
   end
 
   context "divisible by 5" do
-    let(:number) { [ 5, 10, 15, 20 ].sample }
+    let(:number) { [ 5, 10, 20, 25 ].sample }
 
     it "prints dev" do
       is_expected.to eq "Magic"
+    end
+  end
+
+  context "divisible by both" do
+    let(:number) { [ 15, 30, 45, 60 ].sample }
+
+    it "prints dev" do
+      is_expected.to eq "DevMagic"
     end
   end
 end
