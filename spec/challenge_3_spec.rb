@@ -1,4 +1,4 @@
-require './lib/challenge_3'
+require './lib/challenge_3/dev_magic'
 
 describe DevMagic do
   subject { DevMagic.print(number) }
