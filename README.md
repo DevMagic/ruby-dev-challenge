@@ -17,11 +17,15 @@ O que esta expressão retorna e por quê?
 
 `true and 0 && !nil and 3 > 2`
 
+A expressão retorna `true`. A primeira parte da expressão possui dois valores, que quando comparados retornam `true`. Apesar do segundo valor da primeira expressão ser `0`, ele é um valor valido que no ruby é avaliado como `true`(Apenas seria avalido como falso se o valor fosse `false` ou `nil`). Já na primeira parte da segunda expressão `nil` é negado caracterizando-a como verdadeira e posteriormente o resultado da expressão `3>2` também é verdadeiro. Logo toda a expressão é verdadeira.
+
 ### Desafio 2
 
 Explique o funcionamento do operador _Or Equals_
 
 `a ||= b`
+
+O operador `||=` atribui um valor a variável apenas caso ela esteja possua um valor nil, false, ou undefined, do contrario ele receberá o valor de `a`.Sua forma expandida pode ser escrita como `a = a || b`. É muito utilizado para carregar valores de maneira "lazy"
 
 ### Desafio 3
 
