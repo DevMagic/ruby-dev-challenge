@@ -25,6 +25,8 @@ Explique o funcionamento do operador _Or Equals_
 
 `a ||= b`
 
+O operador `||=` atribui um valor a variável apenas caso ela esteja possua um valor nil, false, ou undefined, do contrario ele receberá o valor de `a`.Sua forma expandida pode ser escrita como `a = a || b`. É muito utilizado para carregar valores de maneira "lazy"
+
 ### Desafio 3
 
 Escreva um programa que imprima os números de 1 até 100 substituindo os múltiplos de 3 pela palavra _Dev_, os múltiplos de 5 pela palavra _Magic_ e os múltiplos de ambos pela palavra _DevMagic_
