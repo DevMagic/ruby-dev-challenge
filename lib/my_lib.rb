@@ -30,7 +30,7 @@ def desafio4(sentence)
 end
 
 def desafio5(integer)
-	integer.to_str
+	"#{integer}"
 end
 
 def home
@@ -38,11 +38,11 @@ def home
     p '-----------------------------------------------------------------------------------'
     p '| .+* . * + . * +* . * + . * . Desafio DevMagic + + . + * .+ *. *.+ + . * .* . *  |'
     p '-----------------------------------------------------------------------------------'
-    p '# ruby my_lib.rb desafio1                    Responde o desafio 1'   
-    p '# ruby my_lib.rb desafio2                    Responde o desafio 2'  
-    p '# ruby my_lib.rb desafio3                    Executa o desafio 3'   
-    p '# ruby my_lib.rb desafio4 ["arg"]            Executa o desafio 4'  
-    p '# ruby my_lib.rb desafio5 ["arg"]            Executa o desafio 5'   
+    p '# ruby my_lib.rb desafio1                  Responde o desafio 1'   
+    p '# ruby my_lib.rb desafio2                  Responde o desafio 2'  
+    p '# ruby my_lib.rb desafio3                  Executa o desafio 3'   
+    p '# ruby my_lib.rb desafio4 [arg]            Executa o desafio 4'  
+    p '# ruby my_lib.rb desafio5 [arg]            Executa o desafio 5'   
     p '-----------------------------------------------------------------------------------'
     
 end
