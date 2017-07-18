@@ -25,12 +25,12 @@ def desafio3
 
 end
 
-def desafio4(sentenca)
-	if sentenca.respond_to?(:to_str)
-		(sentenca.downcase.split == sentenca.downcase.split.reverse.map {|word| word.reverse })? 'É um palíndromo' : 'Não é um palindroma' 
-	else
-		"O argumento deve ser uma string e deve estar entre '' "
-	end
+def desafio4(sentence)
+	(sentence.downcase.split == sentence.downcase.split.reverse.map {|word| word.reverse })? 'É um palíndromo' : 'Não é um palindromo' 
+end
+
+def desafio5(integer)
+	integer.to_str
 end
 
 def home
@@ -74,8 +74,20 @@ case arguments.shift
 
 	    p '-----------------------------------------------------------------------------------'
 	    p '| .+* . * + . * +* . * + . * . Desafio DevMagic + + . + * .+ *. *.+ + . * .* . *  |'
+	    p '-----------------------------------------------------------------------------------'  
+
+	    if arguments.count != 1 || !arguments[0].respond_to?(:to_str)
+    		p "O argumento deve ser uma string e deve estar entre '' "
+    	else
+	    	p " Desafio 4: #{desafio4 arguments.shift}"  
+	    end
+
+	when 'desafio5'
+
+	    p '-----------------------------------------------------------------------------------'
+	    p '| .+* . * + . * +* . * + . * . Desafio DevMagic + + . + * .+ *. *.+ + . * .* . *  |'
 	    p '-----------------------------------------------------------------------------------'    
-	    p " Desafio 4: #{desafio4 arguments.shift}"  
+	    p " Desafio 5: #{desafio5 arguments.shift.to_i}"
 
     else
         home
