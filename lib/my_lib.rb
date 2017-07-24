@@ -35,6 +35,13 @@
     home
   end  
 
+  def desafio4
+    puts "Digite a palavra para verificar se é um palindromo:"
+    str = gets.chomp
+    puts (str.reverse.eql?(str))? "Bingo, #{str} é um palindromo" : "Que pena, #{str} não é um palindromo"
+    home
+  end
+
   puts "================================================================"
   puts " Esse script foi feito com intuito de cumprir o"
   puts "                Desafio DevMagic."
