@@ -20,8 +20,14 @@
    expressão está sendo negada, ou seja 'não nil' que é o mesmo que dizer 'não falso' ou 'true' 
    a segunda expressão é uma comparassão simples 3>2 e 3 sendo maior que 2 a expressão é true, quando interpretamos '!nil and 3>2' temos  
    'true and true' que retorna true, agora temos a expressão A = true e B = true, logo 'A && B' é true. \n \n \n"
-    home()
+    home
   end
+
+  def desafio2
+    puts "\n \n \n a ||= b significa dizer 'Caso não haja valor em a preencha-o com b', se a tiver algum valor, b não será atribuido a 'a'. \n \n \n"
+    home
+  end  
+
 
 
 
@@ -29,4 +35,4 @@
   puts " Esse script foi feito com intuito de cumprir o"
   puts "                Desafio DevMagic."
   puts "================================================================"
-  home()
+  home
