@@ -26,10 +26,14 @@
   def desafio2
     puts "\n \n \n a ||= b significa dizer 'Caso não haja valor em a preencha-o com b', se a tiver algum valor, b não será atribuido a 'a'. \n \n \n"
     home
+  end
+
+  def desafio3
+    (1..100).each do |n|
+      puts (n%3==0)? 'Dev' : (n%5==0)? 'Magic' : (n%3==0 && n%5==0)? 'DevMagic' : n
+    end
+    home
   end  
-
-
-
 
   puts "================================================================"
   puts " Esse script foi feito com intuito de cumprir o"
