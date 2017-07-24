@@ -1,5 +1,5 @@
-  def home
-    puts "Escolha o desafio, escolhendo de 1 a 5 e pressione enter ou pressione 0 para sair: "
+  def main
+    puts "Escolha o desafio, escolhendo de 1 a 5 e pressione enter ou qualquer outra tecla para sair: "
     escolha = gets.to_i()
 
     case escolha
@@ -8,8 +8,7 @@
      when 3 then desafio3()
      when 4 then desafio4()
      when 5 then desafio5()
-     when 0 then exit
-     else puts "Esse desafio nao existe, tente novamente escolhendo entre 1 a 5 ou pressione 0 para sair"
+     else puts exit
     end
   end
 
@@ -20,30 +19,37 @@
    expressão está sendo negada, ou seja 'não nil' que é o mesmo que dizer 'não falso' ou 'true' 
    a segunda expressão é uma comparassão simples 3>2 e 3 sendo maior que 2 a expressão é true, quando interpretamos '!nil and 3>2' temos  
    'true and true' que retorna true, agora temos a expressão A = true e B = true, logo 'A && B' é true. \n \n \n"
-    home
+    main
   end
 
   def desafio2
     puts "\n \n \n a ||= b significa dizer 'Caso não haja valor em a preencha-o com b', se a tiver algum valor, b não será atribuido a 'a'. \n \n \n"
-    home
+    main
   end
 
   def desafio3
     (1..100).each do |n|
       puts (n%3==0)? 'Dev' : (n%5==0)? 'Magic' : (n%3==0 && n%5==0)? 'DevMagic' : n
     end
-    home
+    main
   end  
 
   def desafio4
     puts "Digite a palavra para verificar se é um palindromo:"
     str = gets.chomp
     puts (str.reverse.eql?(str))? "Bingo, #{str} é um palindromo" : "Que pena, #{str} não é um palindromo"
-    home
+    main
+  end
+
+  def desafio5
+    puts "Digite um número ou letra"
+    value = gets.chomp.to_s
+    puts (value.to_i.to_s == value)? "#{value} é um número inteiro!" : "#{value} não é um número inteiro ou não é um número."
+    main
   end
 
   puts "================================================================"
   puts " Esse script foi feito com intuito de cumprir o"
   puts "                Desafio DevMagic."
   puts "================================================================"
-  home
+  main
