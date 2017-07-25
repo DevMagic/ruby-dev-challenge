@@ -42,9 +42,13 @@
   end
 
   def desafio5
-    puts "Digite um número ou letra"
-    value = gets.chomp.to_s
-    puts (value.to_i.to_s == value)? "#{value} é um número inteiro!" : "#{value} não é um número inteiro ou não é um número."
+    puts "Digite um número"
+    numero = gets.to_i
+    puts "Verificando a Classe inserida"
+    puts "Class: #{numero.class}"
+    puts "Convertendo em string e verificando a class"
+    string = numero.to_s
+    puts "Class: #{string.class}"
     main
   end
 
