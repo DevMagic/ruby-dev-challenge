@@ -1,6 +1,6 @@
 ![Logo](images/devmagic-logo.png)
 
-#Instruções para execução do código
+# Instruções para execução do código
 
 - Abra o terminal
 - digite cd 'ruby-dev-challenge'
