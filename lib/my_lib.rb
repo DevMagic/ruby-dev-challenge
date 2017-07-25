@@ -36,7 +36,7 @@
 
   def desafio4
     puts "Digite a palavra para verificar se é um palindromo:"
-    str = gets.chomp
+    str = gets.chomp.delete(' ')
     puts (str.reverse.eql?(str))? "Bingo, #{str} é um palindromo" : "Que pena, #{str} não é um palindromo"
     main
   end
