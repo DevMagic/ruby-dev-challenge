@@ -1,12 +1,14 @@
+![Logo](images/devmagic-logo.png)
+
 #Instruções para execução do código
 
 - Abra o terminal
 - digite cd 'ruby-dev-challenge'
 - digite 'ruby lib/my_lib.rb'
 - Siga as instruções apresentadas
+
 =============================================
 
-![Logo](images/devmagic-logo.png)
 
 # Desafio Técnico para Desenvolvedor Ruby
 
